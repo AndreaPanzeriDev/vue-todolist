@@ -11,7 +11,8 @@ var app = new Vue({
     },
     methods: {
         addNewTask: function(){
-
+            let obj = {text: `${this.textInput}`, done: 'true'};
+            this.toDo.push(obj)
         }
     },
 })

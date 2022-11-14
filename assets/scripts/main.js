@@ -18,13 +18,13 @@ Bonus:
 
 
 var app = new Vue({
-    el: '#todo',
-    textInput: "",
+    el: '#app',
     data: {
         todolist: [
             {text : "prova 1", done: true},
             {text: "prova 2", done: true}
-        ]
+        ],
+        textInput: "",
     },
     methods: {
         addNewTask: function(){

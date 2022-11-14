@@ -3,15 +3,18 @@ var app = new Vue({
     el: "#root",
     data: {
         toDo: [
-            {text: "balamromveoivoinvoinrv", done: true},
-            {text: "balamromveoivoinvoinrv", done: true},
-            {text: "balamromveoivoinvoinrv", done: true},
+            {text: "balamromveoivoinvoinrv", done: false},
+            {text: "balamromveoivoinvoinrv", done: false},
+            {text: "balamromveoivoinvoinrv", done: false},
         ],
         textInput : "",
     },
     methods: {
-        addNewTask: function(){
-            let obj = {text: `${this.textInput}`, done: 'true'};
+        addNewTask(){
+            let obj = {
+                text: this.textInput,
+                done: false
+            };
             this.toDo.push(obj)
         }
     },

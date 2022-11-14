@@ -13,3 +13,26 @@ body{
     height: 100vh;
 }
 
+
+/*********************
+        LIST
+*********************/
+
+ul{
+    list-style: none;   
+}
+
+.list-group-item{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*********************
+        STYLE
+*********************/
+
+.fa-xmark{
+    color: red;
+}

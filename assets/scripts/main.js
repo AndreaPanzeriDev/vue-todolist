@@ -2,11 +2,7 @@
 var app = new Vue({
     el: "#root",
     data: {
-        toDo: [
-            {text: "balamromveoivoinvoinrv", done: false},
-            {text: "balamromveoivoinvoinrv", done: false},
-            {text: "balamromveoivoinvoinrv", done: false},
-        ],
+        toDo: [],
         textInput : "",
     },
     methods: {

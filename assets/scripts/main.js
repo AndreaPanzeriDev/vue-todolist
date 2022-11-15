@@ -11,7 +11,8 @@ var app = new Vue({
                 text: this.textInput,
                 done: false
             };
-            this.toDo.push(obj)
+            this.toDo.push(obj);
+            this.textInput = " "
         },
         deleteAction(index){
             this.toDo.splice(index, 1)

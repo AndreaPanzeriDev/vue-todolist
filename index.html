@@ -17,7 +17,7 @@
     <div id="root">
         <header class="text-center mt-4">
             <input type="text" placeholder="Inserisci un nuovo task" v-model="textInput">
-            <button @click="addNewTask" type="button" class="btn btn-primary">Nuova todo</button>
+            <button @click="addNewTask" @keyup.enter="handleSubmit" type="button" class="btn btn-primary">Nuova todo</button>
         </header>
 
         <main>
